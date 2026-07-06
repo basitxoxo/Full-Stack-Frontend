@@ -10,7 +10,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import Unauthorized from './pages/Unauthorized';
 import NotFound from './pages/NotFound';
 import AdminChangePassword from './pages/AdminChangePassword';
-
+import UserDashboard from './pages/UserDashboard';
 import reactLogo from './assets/react.svg';
 import viteLogo from './assets/vite.svg';
 import heroImg from './assets/hero.png';
@@ -41,7 +41,7 @@ export default function App() {
 
   {/* Admin */}
   <Route path="/admin" element={<AdminDashboard />} />
-
+  <Route path="/userdashboard" element={<UserDashboard />} />
   {/* Error Pages */}
   <Route path="/unauthorized" element={<Unauthorized />} />
   <Route path="*" element={<NotFound />} />

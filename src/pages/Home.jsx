@@ -47,8 +47,13 @@ export default function Home() {
         navigate("/staff");
         break;
 
+      case "User":
+        navigate("/userdashboard");
+        break;
+
       default:
-        navigate("/dashboard");
+        navigate("/userdashboard");
+        break;
     }
   };
 
@@ -142,7 +147,7 @@ export default function Home() {
                 onClick={() => navigate("/profile")}
                 className="bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg"
               >
-                Profile
+                View your Profile
               </button>
 
               <button

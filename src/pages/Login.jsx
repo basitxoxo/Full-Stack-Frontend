@@ -32,13 +32,17 @@ export default function Login() {
 
       // Check selected role matches actual role
       if (role !== selectedRole) {
-        setError(
+        if (role === "Staff") {
+        setError("This account isn't implemented yet.");
+        } else {
+          setError(
           `This account belongs to "${role}" role. Please select ${role} from the dropdown.`
-        );
+          );
+        }
 
-        localStorage.clear();
-        return;
-      }
+  localStorage.clear();
+  return;
+}
 
       // Redirect based on role
       switch (role) {
@@ -51,7 +55,7 @@ export default function Login() {
           break;
 
         default:
-          navigate("/dashboard");
+          navigate("/userdashboard");
       }
     } catch (err) {
       if (err.response) {

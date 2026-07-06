@@ -60,9 +60,7 @@ export default function UserDashboard() {
           },
         }
       );
-    } catch (error) {
-      // Ignore logout errors
-    }
+    } catch (error) {}
 
     localStorage.removeItem("accessToken");
     navigate("/login");

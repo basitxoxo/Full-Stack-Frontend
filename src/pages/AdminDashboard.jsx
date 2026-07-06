@@ -107,7 +107,7 @@ export default function AdminDashboard() {
             </h2>
 
             <p className="text-gray-500 mb-4">
-              Change user passwords.
+              Change your passwords.
             </p>
             
             <button
@@ -124,32 +124,18 @@ export default function AdminDashboard() {
               Change User Password
             </h2>
 
-            
+            <p className="text-gray-500 mb-4">
+              Change all users' passwords.
+            </p>
 
               <button
             onClick={() => navigate("/admin/change-password")}
-            className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg"
+              className="w-full bg-red-600 hover:bg-green-700 text-white py-2 rounded-lg"
             >
             Click me
             </button>
 
             </div>
-            
-          <div className="bg-white rounded-xl shadow p-6">
-            <h2 className="text-xl font-semibold mb-2">
-              System Statistics
-            </h2>
-
-            <p className="text-gray-500 mb-4">
-              Monitor users and activity.
-            </p>
-
-            <button
-              className="w-full bg-purple-600 hover:bg-purple-700 text-white py-2 rounded-lg"
-            >
-              View
-            </button>
-          </div>
 
         </div>
 
